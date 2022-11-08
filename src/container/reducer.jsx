@@ -1,17 +1,25 @@
-const reducer=(count, action)=>{
+const reducer=(count , action)=>{
+
 
     switch(action.type){
+
         case "INC":
-            return (count = count+1)
+            return count = count + 1;
 
         case "DEC":
-            let newcount =0
-            count >= 1 ? (newcount = count -1) : (newcount =0)
-        return newcount
+            let newcount = 0
+             count >= 1 ? (newcount = count -1 ): (count = 0)
 
-        default:
-            return count
+                return newcount
+
+            default:
+                return count
+
     }
+
+           
+
+
 
 }
 
